@@ -9,15 +9,15 @@
 public class Test {
     public static void main(String[] args) {
         Square square = new Square(10, 15);
-        square.calculateArea();
+        System.out.println(square.calculateArea());
 
         Rectangle rectangle = new Rectangle(20, 15);
-        rectangle.calculateArea();
+        System.out.println(rectangle.calculateArea());
 
         Triangle triangle = new Triangle(21, 11);
-        triangle.calculateArea();
+        System.out.println(triangle.calculateArea());
 
         Circle circle = new Circle(14);
-        circle.calculateArea();
+        System.out.println(circle.calculateArea());
     }
 }

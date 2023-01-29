@@ -1,8 +1,7 @@
 //создаем класс-наследник от класса "Фигура" -  "Прямоугольник"
 public class Rectangle extends Figure {
-    double area;
-    double length;
-    double width;
+    final double length;
+    final double width;
 
     public Rectangle(int length, int width) {
         this.length = length;
@@ -10,9 +9,7 @@ public class Rectangle extends Figure {
     }
 
     @Override
-    public void calculateArea() {
-        area = length * width;
-        System.out.println("площадь прямоугольника = " + area);
-
+    public double calculateArea() {
+        return length * width;
     }
 }

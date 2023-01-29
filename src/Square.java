@@ -1,8 +1,7 @@
 //создаем класс-наследник от класса "Фигура" -  "Квадрат"
 public class Square extends Figure {
-    double area;
-    int width;
-    int diagonal;
+    final int width;
+    final int diagonal;
 
     public Square(int width, int diagonal) {
         this.width = width;
@@ -10,8 +9,7 @@ public class Square extends Figure {
     }
 
     @Override
-    public void calculateArea() {
-        area =(double) diagonal * diagonal / 2;
-        System.out.println("площадь квадрата = " + area);
+    public double calculateArea() {
+        return (double) diagonal * diagonal / 2;
     }
 }

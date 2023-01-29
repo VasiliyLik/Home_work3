@@ -1,8 +1,7 @@
 //создаем класс-наследник от класса "Фигура" -  "Треугольник"
 public class Triangle extends Figure {
-    double area;
-    int basis;
-    int height;
+    final int basis;
+    final int height;
 
     public Triangle(int basis, int height) {
         this.basis = basis;
@@ -10,8 +9,7 @@ public class Triangle extends Figure {
     }
 
     @Override
-    public void calculateArea() {
-        area = 0.5 * basis * height;
-        System.out.println("площадь треугольника = " + area);
+    public double calculateArea() {
+        return 0.5 * basis * height;
     }
 }
